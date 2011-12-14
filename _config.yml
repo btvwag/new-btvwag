@@ -2,7 +2,7 @@ auto: true
 server: true
 exclude: README.md, .gitignore
 permalink: none
-baseurl: 
+baseurl:
 url: http://btvwag.org
 hashtag: '#btvwag'
 twitter_search: 'btvwag'

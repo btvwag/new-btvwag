@@ -29,6 +29,32 @@ header {
   margin:80px 0 50px 20px;
 }
 
+.nav {
+  margin-top:15px;
+}
+
+.nav li {
+  float:left;
+  margin-right:10px;
+}
+
+.nav li a {
+  border:solid 1px #ccc;
+  padding:5px 10px 5px 10px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  background:#f2f2f2;
+}
+
+.nav li a:hover {
+  box-shadow:inset 1px 1px #dadada;
+}
+
+.nav li a:active {
+  box-shadow:inset 2px 2px #d2d2d2;
+}
+
 header .logo {
   display:block;
   height:80px;
@@ -168,6 +194,14 @@ a.tweet {
   border-radius:5px;
 }
 
+.buttons a:hover {
+  box-shadow:inset 1px 1px #dadada;
+}
+
+.buttons a:active {
+  box-shadow:inset 2px 2px #d2d2d2;
+}
+
 .watch-docs {
   opacity:0;
   z-index:-1000;
@@ -210,7 +244,11 @@ a.tweet {
   line-height:16px;
 }
 
-.job-title {
+.event {
+  margin-bottom:20px;
+}
+
+.title-block {
   color:#fff !important;
   background:#4183C4;
   padding:8px 10px 10px 10px;
@@ -219,20 +257,19 @@ a.tweet {
   margin:20px 0 0 0 !important;
 }
 
-.job-title:hover {
-  background:#154b7f;
-}
-
-.job-title .arrow {
-  float:right;
-}
-
-.job-content {
-  display:none;
+.content-block {
   background:#fff;
   border:solid 1px #ccc;
   padding:10px;
   margin:0 0 20px 0;
+}
+
+.title-block:hover {
+  background:#154b7f;
+}
+
+.title-block .arrow {
+  float:right;
 }
 
 /*

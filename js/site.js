@@ -4,6 +4,23 @@ if (!site) throw new Error('Configuration not found');
 
 var longneck = {};
 
+longneck.titleBlock = function() {
+  $(".content-block").hide();
+
+  $("#down").live("click", function() {
+    $($(this).parent().find(".content-block")[0]).slideToggle("fast");
+    $(this).attr("id", "up");
+    $($(this).children()[0]).html("&#8593;")
+  });
+
+  $("#up").live("click", function() {
+    $($(this).parent().find(".content-block")[0]).slideToggle("fast");
+    $($(this).children()[0]).html("&#8595;")
+    $(this).attr("id", "down");
+  });
+}
+$(longneck.titleBlock);
+
 longneck.githubWatcherProject = function(resp) {
     var watcherProject = $('.follower-project');
     var i = 0;

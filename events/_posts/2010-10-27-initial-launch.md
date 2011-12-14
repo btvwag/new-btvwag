@@ -23,6 +23,4 @@ pitch in to develop a better website, please read up on the
 and then run the following command to clone this website, and start
 contributing.
 
-{% highlight bash %}
 git clone http://github.com/btvwag/btvwag.github.com.git
-{% endhighlight %}
