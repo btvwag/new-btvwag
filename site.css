@@ -6,41 +6,55 @@ body {
   background:#fff url(assets/background.png);
   color:#444;
   font:normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+}
 
 a {
   text-decoration:none;
-  color: #4183C4;
-  }
+  color:#4183C4;
+}
 
 .limiter {
   width:760px;
   margin:0px auto;
-  }
+}
 
 aside {
   position:relative;
   float:right;
   width:210px;
   margin-top:175px;
-  }
+}
+
+header {
+  margin:80px 0 50px 20px;
+}
 
 header .logo {
-  height:175px;
-  background:url(assets/logo.png) no-repeat 50% 50%;
   display:block;
-  overflow:hidden;
-  text-indent:-9999px;
-  }
+  height:80px;
+  font-size:100px;
+}
+
+header .logo .red {
+  color:#4183C4;
+}
+
+header a {
+  color:#000;
+}
+
+header a:visited {
+  color:#000;
+}
 
 #main,
 header .logo {
   width:530px;
-  }
+}
 
 #content {
   padding:0px 20px 20px;
-  }
+}
 
 .followers,
 .follower-project,
@@ -49,10 +63,10 @@ header .logo {
 
 .prose h1,
 .prose h2 {
-  font-family: 'Jockey One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'Jockey One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:22px;
   font-weight:normal;
-  }
+}
 
 /* Prose */
 .prose h1,
@@ -81,7 +95,7 @@ header .logo {
 .prose .ts-map {
   display:block;
   margin:0px 0px 20px;
-  }
+}
 
 .prose li { margin-left:30px; }
 .prose ul li { list-style:disc; }
@@ -92,10 +106,10 @@ a.tweet {
   display:block;
   height:48px;
   width:48px;
-  margin: 0px 4px 4px 0px;
+  margin:0px 4px 4px 0px;
   float:left;
-  position: relative;
-  }
+  position:relative;
+}
 
 .thumb {
   display:block;
@@ -103,7 +117,7 @@ a.tweet {
   width:48px;
   background:white 50% 50% no-repeat;
   background-size:48px;
-  }
+}
 
 .popup {
   display:none;
@@ -116,14 +130,14 @@ a.tweet {
   border-radius:5px;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
-  }
+}
 
 .popup * { color:#fff; }
 
 .popup small {
-  display: block;
-  font-size: 12px;
-  }
+  display:block;
+  font-size:12px;
+}
 
 .tweet:hover,
 .github-user:hover { z-index:1; }
@@ -135,7 +149,7 @@ a.tweet {
 .buttons {
   margin-bottom:10px;
   width:205px;
-  }
+}
 
 .buttons a {
   text-align:center;
@@ -145,13 +159,14 @@ a.tweet {
   margin:0;
   padding:0;
   padding:4px;
-  color: #333;
-  background:#FBDFBC;
-  text-shadow: 1px 1px 0 white;
+  color:#333;
+  background:#f2f2f2;
+  border:solid 1px #ccc;
+  text-shadow:1px 1px 0 white;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px;
-  }
+}
 
 .watch-docs {
   opacity:0;
@@ -170,7 +185,7 @@ a.tweet {
   transition:opacity .25s, z-index 0s .25s;
   -moz-transition:opacity .25s, z-index 0s .25s;
   -webkit-transition:opacity .25s, z-index 0s .25s;
-  }
+}
 
   .watch-docs.active {
     opacity:100;
@@ -178,38 +193,63 @@ a.tweet {
     transition:opacity .25s, z-index 0s 0s;
     -moz-transition:opacity .25s, z-index 0s 0s;
     -webkit-transition:opacity .25s, z-index 0s 0s;
-    }
+  }
 
   .watch-docs ol {
     list-style-type:decimal;
     padding-left:20px
-    }
+  }
 
   .watch-docs img {
     margin:10px 15px 0px;
     text-align:center;
-    }
+  }
 
 .editing {
   font-size:11px;
   line-height:16px;
-  }
+}
+
+.job-title {
+  color:#fff !important;
+  background:#4183C4;
+  padding:8px 10px 10px 10px;
+  box-shadow:2px 2px #ccc;
+  cursor:pointer;
+  margin:20px 0 0 0 !important;
+}
+
+.job-title:hover {
+  background:#154b7f;
+}
+
+.job-title .arrow {
+  float:right;
+}
+
+.job-content {
+  display:none;
+  background:#fff;
+  border:solid 1px #ccc;
+  padding:10px;
+  margin:0 0 20px 0;
+}
 
 /*
 ** Markup free clearing
-** Details: http://www.positioniseverything.net/easyclearing.html
+** Details:http://www.positioniseverything.net/easyclearing.html
 */
 .clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  }
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
 
-.clearfix { display: inline-block; }
+.clearfix { display:inline-block; }
 
 /* Hides from IE-mac \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
 /* End hide from IE-mac */
